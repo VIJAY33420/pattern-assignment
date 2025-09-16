@@ -1,0 +1,23 @@
+p{ 
+    font-size: 20px;
+    line-height: 40px;
+
+}
+#site-title{
+    background-color: firebrick;
+    padding: 5px;
+}
+.muted{
+    color:gray;
+}
+.highlight{
+    background-color: green;
+    border: 3px solid black;
+    
+}
+ .highlight-text{
+    background-color: rgb(93, 93, 240);
+}
+#override,.highlight-text{
+    background-color: yellow;
+}
