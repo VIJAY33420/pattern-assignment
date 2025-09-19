@@ -1,16 +1,21 @@
 #include <stdio.h>
-int main(){
+
+int main() {
     int n;
     scanf("%d",&n);
-for(int i=1; i<=n; i++){ // 1
-    for(int j=1;  j<=n-i;  j++){  
-  printf(" ", n-i);
-    
-    }  
-    for(int j=0; j<i; j++ ){  
-        printf("%c", 'A'+j);
+    int count =0;
+    for(int i=1; i<=n; i++){
+      for(int j=0; j<=n; j++){
+          if(i+j>n){
+              printf("%c",'A'+count);
+              count ++;
+          }
+          else{
+              printf(" ");
+          }
+      }
+      printf("\n");
+      count =0;
     }
-    printf("\n");
-}
-return 0;
+    return 0;
 }
